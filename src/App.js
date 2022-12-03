@@ -1,7 +1,4 @@
-
-import CategoryItem from "./components/category-item/category-item.component";
-import './components/category-item/category-item-styles.scss'
-
+import Directory from "./components/directory/directory.component";
 
 function App() {
   const categories = [
@@ -33,12 +30,7 @@ function App() {
   ]
   ;
   return (
-    <div className="categories-container">
-      {categories.map((category) => (
-        <CategoryItem key={category.id} category={category}/>
-        
-      ))}
-    </div>
+    <Directory categories={categories}/>
   );
 }
 
